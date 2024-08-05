@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakery Menu</title>
+    <link rel="stylesheet" href="stylehome.css">
+    <!-- header.html -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Title</title>
+    <!-- Other head content -->
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/66ad25651601a2195ba0232c/1i4a5k628';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+
+
+    <style>
+        body {
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Optionally remove default padding */
+        }
+
+        .menu-container {
+            text-align: center;
+            padding: 20px;
+            background-image: url(https://t4.ftcdn.net/jpg/00/90/88/79/360_F_90887955_6ceSbudYq44JYKEgXV3U32LzxBeKyvkv.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: #ddd;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .menu-item {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px;
+            text-align: center;
+            background-color: #fff;
+            position: relative; /* Required for z-index to work */
+            z-index: 1; /* Ensure the item is above the background */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+        }
+
+        .menu-item:hover {
+            transform: scale(1.05); /* Slightly larger on hover */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow on hover */
+            z-index: 2; /* Bring to front on hover */
+        }
+
+        .menu-item img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .menu-item button {
+            background-color: #ff9900;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease; /* Smooth transition */
+        }
+
+        .menu-item button:hover {
+            background-color: #e68a00;
+        }
+
+        h1 {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <h1 class="bake">Bakery Menu</h1>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="https://scientificallysweet.com/wp-content/uploads/2020/09/IMG_4087-feature-2.jpg" alt="Chocolate Cake">
+                <h2>Chocolate Cake</h2>
+                <p>₹1,245.00</p>
+                <button onclick="redirectToOrderPage('Chocolate Cake', 1245)">Order Now</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUzt_RD7uxGPxeR2sQVYnTKtQALj-IIMP5eA&s" alt="Blueberry Muffin">
+                <h2>Blueberry Muffin</h2>
+                <p>₹249.00</p>
+                <button onclick="redirectToOrderPage('Blueberry Muffin', 249)">Order Now</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://www.inspiredtaste.net/wp-content/uploads/2022/11/Apple-Pie-Recipe-Video.jpg" alt="Apple Pie">
+                <h2>Apple Pie</h2>
+                <p>₹996.00</p>
+                <button onclick="redirectToOrderPage('Apple Pie', 996)">Order Now</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://stpierrebakery.com/app/uploads/2020/12/sp_web__0004_ham_and_cheese_croissant_cmyk_small.jpg" alt="Cheese Croissant">
+                <h2>Cheese Croissant</h2>
+                <p>₹332.00</p>
+                <button onclick="redirectToOrderPage('Cheese Croissant', 332)">Order Now</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://realfood.tesco.com/media/images/Strawberry-Tart-lghero-0ac5df2f-e498-40ae-bdbd-e3e68abd4afa-0-1400x919.jpg" alt="Strawberry Tart">
+                <h2>Strawberry Tart</h2>
+                <p>₹415.00</p>
+                <button onclick="redirectToOrderPage('Strawberry Tart', 415)">Order Now</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://www.allrecipes.com/thmb/i9KCEbxUGQ1Sa4F7Gts7SGBOpoM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/157877-vanilla-cupcakes-ddmfs-4X3-0397-59653731be1d4769969698e427d7f5bc.jpg" alt="Vanilla Cupcake">
+                <h2>Vanilla Cupcake</h2>
+                <p>₹207.00</p>
+                <button onclick="redirectToOrderPage('Vanilla Cupcake', 207)">Order Now</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://cookiesfordays.com/wp-content/uploads/2024/01/chocolate-chip-cookie-recipe-ft.jpg" alt="Chocolate Chip Cookie">
+                <h2>Chocolate Chip Cookie</h2>
+                <p>₹124.00</p>
+                <button onclick="redirectToOrderPage('Chocolate Chip Cookie', 124)">Order Now</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://images.immediate.co.uk/production/volatile/sites/30/2011/02/Lemon-meringue-pie-ad48d98.jpg" alt="Lemon Meringue Pie">
+                <h2>Lemon Meringue Pie</h2>
+                <p>₹830.00</p>
+                <button onclick="redirectToOrderPage('Lemon Meringue Pie', 830)">Order Now</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://www.allrecipes.com/thmb/POFbIVTzNctFvvh1JIlMSRHAeZE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/20144-banana-banana-bread-mfs-60-bddcb8e0caac452386de52f6fecf33db.jpg" alt="Banana Bread">
+                <h2>Banana Bread</h2>
+                <p>₹498.00</p>
+                <button onclick="redirectToOrderPage('Banana Bread', 498)">Order Now</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://www.spoonforkbacon.com/wp-content/uploads/2021/03/carrot_cake_recipe_card.jpg" alt="Carrot Cake">
+                <h2>Carrot Cake</h2>
+                <p>₹1,245.00</p>
+                <button onclick="redirectToOrderPage('Carrot Cake', 1245)">Order Now</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://images.themodernproper.com/billowy-turkey/production/posts/PumpkinPie_13.jpg?w=960&h=720&q=82&fm=jpg&fit=crop&dm=1697944752&s=55c15756549ea21d8535d323716c7d04" alt="Pumpkin Pie">
+                <h2>Pumpkin Pie</h2>
+                <p>₹996.00</p>
+                <button onclick="redirectToOrderPage('Pumpkin Pie', 996)">Order Now</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://simplyhomecooked.com/wp-content/uploads/2019/02/Raspberry-danish-2.jpg" alt="Raspberry Danish">
+                <h2>Raspberry Danish</h2>
+                <p>₹332.00</p>
+                <button onclick="redirectToOrderPage('Raspberry Danish', 332)">Order Now</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://www.aheadofthyme.com/wp-content/uploads/2020/05/quick-and-easy-butter-croissants-2.jpg" alt="Butter Croissant">
+                <h2>Butter Croissant</h2>
+                <p>₹249.00</p>
+                <button onclick="redirectToOrderPage('Butter Croissant', 249)">Order Now</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://www.theflavorbender.com/wp-content/uploads/2019/03/Chocolate-Eclairs-Featured.jpg" alt="Chocolate Éclair">
+                <h2>Chocolate Éclair</h2>
+                <p>₹290.00</p>
+                <button onclick="redirectToOrderPage('Chocolate Éclair', 290)">Order Now</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://baranbakery.com/wp-content/uploads/2021/10/caramelized-white-chocolate-cinnamon-rolls-9.jpg" alt="Cinnamon Roll">
+                <h2>Cinnamon Roll</h2>
+                <p>₹332.00</p>
+                <button onclick="redirectToOrderPage('Cinnamon Roll', 332)">Order Now</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://theplantbasedschool.com/wp-content/uploads/2023/08/Almond-biscotti-2.jpg" alt="Almond Biscotti">
+                <h2>Almond Biscotti</h2>
+                <p>₹166.00</p>
+                <button onclick="redirectToOrderPage('Almond Biscotti', 166)">Order Now</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function redirectToOrderPage(itemName, itemPrice) {
+            window.location.href = `order.html?itemName=${encodeURIComponent(itemName)}&itemPrice=${itemPrice}`;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Bakery</title>
+    <script src="js/app.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Herr+Von+Muellerhoff&family=Poiret+One&family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Additional styling for login link */
+        .nav-item.login {
+            margin-left: auto;
+        }
+        .nav-item.login a {
+            background-color: #ff9900;
+            color: white;
+            border-radius: 5px;
+            padding: 8px 16px;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .nav-item.login a:hover {
+            background-color: #e68a00;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+                <a href="index.html" class="logo">Bakery</a>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link active">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html#reservation" class="nav-link">Reservation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="bakers.html" class="nav-link">Bakers</a>
+                    </li>
+                    <li class="nav-item login">
+                        <a href="login.html" class="nav-link">Login</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero small-size-hero" id="hero">
+        <!-- Hero section content here (if any) -->
+    </section>
+
+    <!-- ABOUT SECTION 1 -->
+    <section class="about">
+        <div class="container">
+            <div class="row">
+                <div class="description padding-right animate-left">
+                    <div class="global-headline">
+                        <h2 class="sub-headline">Read</h2>
+                        <h3 class="headline headline-dark">Our Story</h3>
+                        <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+                    </div>
+                    <p>Welcome to GB Ayyangar Bakery, a beloved institution in Chikodi. Established with a passion for baking, our family-owned bakery has been delighting the community with exquisite treats for generations. We blend time-honored recipes with the finest ingredients, crafting each loaf, cake, and pastry with love and care. Our bakery is a warm, inviting space where friends and families gather to enjoy the delicious aroma and flavors of our baked goods. At GB Ayyangar Bakery, we’re dedicated to quality, tradition, and bringing joy to your table.</p>
+                    <p>As we continue to grow and evolve, our commitment to excellence remains unwavering. We're always exploring new flavors, refining our techniques, and finding innovative ways to bring joy to your table. At GB Ayyangar Bakery, we're not just baking bread and cakes; we're baking a legacy of love, tradition, and community. Thank you for being a part of our story. We look forward to serving you for many more years to come.</p>
+                </div>
+                <div class="image animate-right">
+                    <img class="animate-top" src="images/about-img-2.jpeg" alt="bread">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION 2 -->
+    <section class="about">
+        <div class="container">
+            <div class="row">
+                <div class="image padding-right margin-bottom animate-left">
+                    <img src="images/about-img-1.jpeg" alt="bread">
+                </div>
+                <div class="description animate-right">
+                    <div class="global-headline">
+                        <h2 class="sub-headline">Bread</h2>
+                        <h3 class="headline headline-dark">So Good</h3>
+                        <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptatum dolor earum accusamus suscipit. Officia atque vitae excepturi deserunt nihil?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RESERVATION SECTION -->
+    <section id="reservation" class="reservation">
+        <div class="container">
+            <div class="reservation__container">
+                <h4>Book Your Table</h4>
+                <form action="#" class="reservation__form">
+                    <select name="persons" required>
+                        <option value="" disabled selected>Select number of persons</option>
+                        <option value="1">1 Person</option>
+                        <option value="2">2 Persons</option>
+                        <option value="3">3 Persons</option>
+                        <option value="4">4 Persons</option>
+                        <option value="5">5 Persons</option>
+                        <option value="6">6 Persons</option>
+                        <option value="7">7 Persons</option>
+                    </select>
+                    <input type="date" class="reservation__date" required>
+                    <input type="time" class="reservation__time" required>
+                    <button class="btn btn-primary submit__reservation" type="submit">Book Now</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="back-to-top">
+                <a href="#hero"><i class="fas fa-chevron-up"></i></a>
+            </div>
+            <div class="footer__content">
+                <div class="footer__content-about animate-top">
+                    <h4>About Bakery</h4>
+                    <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+                    <p>GB Ayyangar Bakery, Ambedkar Nagar, Chikodi. Contact: 7829111576</p>
+                </div>
+                <div class="footer__content-divider animate-bottom">
+                    <div class="social-media">
+                        <h4>Follow Us</h4>
+                        <ul class="social-icons">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="newsletter-container">
+                        <h4>Newsletter</h4>
+                        <form action="#" class="newsletter-form">
+                            <div class="newsletter-form-box">
+                                <input type="email" class="newsletter-input" placeholder="Your email address..." required>
+                                <button class="newsletter-btn" type="submit">
+                                    <i class="fas fa-envelope"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

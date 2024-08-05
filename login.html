@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Bakery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@600&family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Source Sans Pro', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://www.posist.com/restaurant-times/wp-content/uploads/2016/10/A-Detailed-Guide-On-Starting-A-Bakery-Business-In-India-In-2023.jpg'); /* Replace with your background image URL */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #fff;
+            text-align: center;
+        }
+
+        .login-container {
+            max-width: 400px;
+            margin: 100px auto;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .login-container h1 {
+            font-family: 'Cabin', sans-serif;
+            font-size: 2.5em;
+            color: #fff;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        .login-container input {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: none;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        .login-container input[type="email"],
+        .login-container input[type="password"] {
+            background: rgba(255, 255, 255, 0.3);
+            color: #fff;
+        }
+
+        .login-container button {
+            width: 100%;
+            padding: 15px;
+            background-color: #ff9900;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 18px;
+            cursor: pointer;
+            margin: 10px 0;
+            transition: background-color 0.3s ease;
+        }
+
+        .login-container button:hover {
+            background-color: #e68a00;
+        }
+
+        .login-container .links {
+            margin-top: 10px;
+        }
+
+        .login-container .links a {
+            color: #ff9900;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .login-container .links a:hover {
+            text-decoration: underline;
+        }
+
+        .welcome-message {
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #fff;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="welcome-message">
+        <h1>Welcome to GB Ayyangar Bakery!</h1>
+        <p>Please log in to access your account.</p>
+    </div>
+    <div class="login-container">
+        <h1>Login</h1>
+        <form id="loginForm">
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+            <div class="links">
+                <a href="forgot-password.html">Forgot Password?</a><br>
+                <a href="register.html">Register Now</a>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Add your login validation logic here
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            // Simulating a successful login
+            if (email && password) {
+                // Redirect to about.html on successful login
+                window.location.href = 'about.html';
+            } else {
+                alert('Please enter valid credentials.');
+            }
+        });
+    </script>
+</body>
+
+</html>
